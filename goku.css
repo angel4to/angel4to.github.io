@@ -3,10 +3,10 @@ body {
     padding: 0;
     font-family: 'Comic Sans MS', cursive;
     background-image: url("domo.png");
-    background-size: cover;          /* Hace que cubra toda la pantalla */
-    background-position: center;     /* Centra la imagen */
-    background-repeat: no-repeat;    /* No se repite */
-    background-attachment: fixed;    /* Se queda fija al hacer scroll */
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;    
+    background-attachment: fixed;   
     text-align: center;
     overflow: hidden;
     color: #d72638;
@@ -33,13 +33,13 @@ img {
 }
 
 
-/* Animación latido */
+
 @keyframes latido {
     from { transform: scale(1); }
     to { transform: scale(1.05); }
 }
 
-/* Globo base */
+
 .balloon {
     position: absolute;
     bottom: -100px;
@@ -50,7 +50,7 @@ img {
     animation: subir 10s linear forwards;
 }
 
-/* Animación para subir globos */
+
 @keyframes subir {
     0% { transform: translateY(0) rotate(0deg); }
     100% { transform: translateY(-120vh) rotate(360deg); }
@@ -61,7 +61,7 @@ img {
     transform: scale(0.5) rotate(-20deg);
 }
 
-/* Animación sorpresa corregida */
+
 @keyframes sorpresa {
     0% {
         opacity: 0;
@@ -72,12 +72,12 @@ img {
         transform: scale(1.1) rotate(10deg);
     }
     100% {
-        opacity: 1; /* 👈 aseguramos que no desaparezca */
+        opacity: 1; 
         transform: scale(1) rotate(0deg);
     }
 }
 
-/* ...todo tu CSS existente permanece igual... */
+
 
 .wrapper {
     max-width: 100%;
